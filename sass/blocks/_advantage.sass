@@ -1,0 +1,166 @@
+.advantage
+    background-image: url('../img/adv-bg.jpg')
+    background-repeat: repeat-y 
+    background-size: 60%
+    margin-top: 135px 
+    padding-top: 112px 
+    margin-bottom: 117px
+    &__block
+        position: relative 
+        display: flex 
+    &__title 
+        position: absolute 
+        color: #020202
+        +semibold 
+        font-size: 28px
+        font-weight: 400
+        text-transform: uppercase 
+        padding: 12px 30px 
+        top: -127px
+        left: -28px
+        z-index: 1 
+    &__list
+        display: flex 
+        flex-direction: row 
+        //justify-content: center
+        flex-basis: 75%
+        flex-wrap: wrap 
+        padding-bottom: 80px 
+        padding-right: 55px 
+        list-style: none 
+    &__item 
+        display: flex 
+        align-items: center 
+        flex-direction: column 
+        padding: 3px 5px 25px 8px 
+        background-color: #ffffff 
+        margin-right: 30px 
+        text-transform:  uppercase 
+        margin-bottom: 35px 
+        width: 29%
+        background-color: white
+    // &__item:nth-child(3)
+    //     margin-right: 15px  
+    &__item:nth-child(3)
+        margin-right: 0px
+    &__item:nth-child(6)
+        margin-right: 0px
+    &__text 
+        margin-bottom: 20px 
+        //width: 140px 
+        +reg 
+        font-size: 18px 
+        font-weight: 400 
+        text-align: center 
+        line-height: 23px 
+        margin-top: 5px
+    &__pict 
+        margin-bottom: 10px
+        margin-top: 10px 
+        min-height: 51px 
+    &__pict:nth-child(4)
+       // margin-bottom: 30px
+    &__steps
+        position: relative 
+        flex-basis: 41% 
+        top: -5px 
+        //padding-left: 30px 
+        //padding-top: 50px 
+        //background-color: #ffffff
+    &__step 
+        display: flex 
+        +semibold
+        margin-bottom: 60px 
+        padding-left: 0px 
+        //padding: 1px 
+        &-text 
+            position: relative 
+            padding-left: 61px 
+            top: 5px 
+            +semibold 
+            font-size: 20px
+            font-weight: 400
+            color: #020202
+            line-height: 25px 
+    &__step:nth-child(3)
+        margin-bottom: 78px 
+    &__num:after
+        content: '' 
+        width: 28px
+        height: 3px
+        position: absolute 
+        top: 15px
+        margin-left: 20px 
+        background-color: #000000     
+    &__num
+        font-size: 35px
+        font-weight: 700
+        text-transform: uppercase
+        color: #ffc800
+        position: relative
+        +reg   
+    &__step
+        margin-bottom: 65px
+@media (max-width: 1200px)
+    .advantage
+        background-size: 100% 
+        &__block
+            display: flex
+            flex-direction: column 
+        &__list
+            padding-right: 0px 
+            //justify-content: center 
+        &__steps 
+            padding: 30px 30px 
+            background-color: #ffffff 
+        &__step 
+            justify-content: left
+            //padding-left: 140px 
+@media (max-width: 1500px)
+    .advantage
+        &__step
+            padding-left: 0px !important
+
+@media (max-width: 315px)
+    .advantage
+        &__step
+            justify-content: left
+            padding-left: 10px 
+@media (min-width: 796px)
+    .advantage
+        &__step
+            justify-content: left 
+            padding-left: 65px
+@media (min-width: 1000px)
+    .advantage
+        &__step
+            justify-content: left 
+            padding-left: 85px
+@media (max-width: 480px)
+    .advantage
+        &__item:nth-child(3)
+            margin-right: 30px
+        &__text
+            font-size: 12px 
+        &__list
+            //margin-left: 30px
+            align-items: center
+            flex-direction: column 
+        &__item
+            width: 50%   
+        &__step
+            &-text 
+                font-size: 16px 
+                line-height: 16px 
+@media (max-width: 1920px)
+    .advantage
+        &__steps
+            flex-basis: 48% 
+@media (max-width: 1490px)
+    .advantage
+        &__steps
+            flex-basis: 39% 
+@media (max-width: 479px)
+    .advantage
+        &__item, &__item:nth-child(3)
+            margin-right: 0px 

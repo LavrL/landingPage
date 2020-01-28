@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Дипломная работа</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+</head>
+
+<body>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=60da896e-65e1-445c-8072-0a9654b98584&lang=ru_RU"
+        type="text/javascript"></script>
+    <!-- Yandex.Metrika counter -->
+    <script> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(53985229, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/53985229" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript> <!-- /Yandex.Metrika counter -->
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-block">
+                <div class="navbar__logo-left">
+                    <div class="navbar__logo">
+                        <a class="navbar__logo-image" href="#">
+                            <img src="img/logo.jpg" alt="Главное лого">
+                            <span class="navbar__logo-text">logo</span>
+                        </a>
+                    </div>
+
+                    <ul class="navbar__menu">
+                        <li class="navbar__menu-item"><a class="navbar__menu__link" href="#serv"> Услуги</a></li>
+                        <li class="navbar__menu-item"><a class="navbar__menu__link" href="#prc">Цены</a></li>
+                        <li class="navbar__menu-item"><a class="navbar__menu__link" href="#fdb">Отзывы</a></li>
+                        <li class="navbar__menu-item"><a class="navbar__menu__link" href="#nws">Новости</a></li>
+                        <li class="navbar__menu-item"><a class="navbar__menu__link" href="#cntct">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar__contacts">
+                    <div class="navbar__phone">
+                        <img src="img/phone-receiver.png" alt="Телефон">
+                    </div>
+                    <a class="navbar__tel" href="tel:+7(863)342-22-21">
+                        +7 (863) 342-22-21
+                    </a>
+                    <button class="button navbar__button" id="callme"> Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Адаптивное меню слева -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="menu">
+                <a href="#" class="menu__btn">
+                    <span class="menu__element"></span>
+                </a>
+                <nav class="menu__list" id="menu-two">
+                    <div class="nabar__logo menu__logo">
+                        <img src="img/logo.jpg" alt="">
+                    </div>
+                    <a class="navbar__tel menu__tel" href="tel:+7(863)342-22-21"><span class="">+7(863)</span>
+                        342-22-21</a>
+                    <a class="button navbar__button menu__button" href="#rf">Заказать звонок</a>
+                    <a class="menu_yellow" href="#srv">Услуги</a>
+                    <a class="menu_yellow" href="#prc">Цены</a>
+                    <a class="menu_yellow" href="#fdb">Отзывы</a>
+                    <a class="menu_yellow" href="#nws">Новости</a>
+                    <a class="menu_yellow" href="#cntct">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero" id="srv">
+        <div class="container">
+            <div class="slider">
+                <div class="hero__block slider__item">
+                    <div>
+                        <div class="hero__title">
+                            Наша бригада по монтированию отопления и сантехники
+                        </div>
+                        <div class="hero__subtitle">
+                            вызов по Москве и Московской области
+                        </div>
+                        <div class="hero__description">
+                            Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что
+                            Вам
+                            нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.
+                        </div>
+                        <button class="button hero__button">
+                            подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero__block slider__item">
+                    <div class="hero__title">
+                        Наша бригада по монтированию отопления и сантехники
+                    </div>
+                    <div class="hero__subtitle">
+                        вызов по Москве и Московской области
+                    </div>
+                    <div class="hero__description">
+                        Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что Вам
+                        нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.
+                    </div>
+                    <button class="button hero__button">
+                        подробнее
+                    </button>
+                </div>
+
+                <div class="hero__block slider__item">
+                    <div class="hero__title">
+                        Наша бригада по монтированию отопления и сантехники
+                    </div>
+                    <div class="hero__subtitle">
+                        вызов по Москве и Московской области
+                    </div>
+                    <div class="hero__description">
+                        Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что Вам
+                        нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.
+                    </div>
+                    <button class="button hero__button">
+                        подробнее
+                    </button>
+                </div>
+
+                <div class="hero__block slider__item">
+                    <div class="hero__title">
+                        Наша бригада по монтированию отопления и сантехники
+                    </div>
+                    <div class="hero__subtitle">
+                        вызов по Москве и Московской области
+                    </div>
+                    <div class="hero__description">
+                        Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что Вам
+                        нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.
+                    </div>
+                    <button class="button hero__button">
+                        подробнее
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="container">
+            <div class="service__block">
+                <button class="button service__title" id="serv">
+                    Услуги
+                </button>
+                <ul class="service__list">
+
+                    <li class="service__option service__heating">
+                        <div class="service__button">
+                            <div class="service__description service__description-message">
+                                <span class="service__description-hide">Монтаж систем <br> отопления</span>
+                            </div>
+                        </div>
+                        <div class="service__button">
+                            <button class="button service__btn">
+                                <span class="service__hide">Узнать цену</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="service__option service__plumbing">
+                        <div class="service__button">
+                            <div class="service__description service__description-message">
+                                <span class="service__description-hide">Монтаж сантехнического оборудования</span>
+                            </div>
+                        </div>
+                        <div class="service__button">
+                            <button class="button service__btn">
+                                <span class="service__hide">Узнать цену</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="service__option service__sewage">
+                        <div class="service__button">
+                            <div class="service__description service__description-message">
+                                <span class="service__description-hide">Монтаж канализационного оборудования</span>
+                            </div>
+                        </div>
+                        <div class="service__button">
+                            <button class="button service__btn">
+                                <span class="service__hide">Узнать цену</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="service__option service__heating">
+                        <div class="service__button">
+                            <div class="service__description service__description-message">
+                                <span class="service__description-hide">Монтаж систем <br> отопления</span>
+                            </div>
+                        </div>
+                        <div class="service__button">
+                            <button class="button service__btn">
+                                <span class="service__hide">Узнать цену</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="service__option service__plumbing">
+                        <div class="service__button">
+                            <div class="service__description service__description-message">
+                                <span class="service__description-hide">Монтаж сантехнического оборудования</span>
+                            </div>
+                        </div>
+                        <div class="service__button">
+                            <button class="button service__btn">
+                                <span class="service__hide">Узнать цену</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="service__option service__sewage">
+                        <div class="service__button">
+                            <div class="service__description service__description-message">
+                                <span class="service__description-hide">Монтаж канализационного оборудования</span>
+                            </div>
+                        </div>
+                        <div class="service__button">
+                            <button class="button service__btn">
+                                <span class="service__hide">Узнать цену</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantage">
+        <div class="container">
+            <div class="advantage__block">
+                <button class="button advantage__title" id="prc">
+                    Почему мы?
+                </button>
+                <ul class="advantage__list">
+                    <li class="advantage__item">
+                        <div class="advantage__pict">
+                            <img src="img/adv1.png" alt="100% гарантия качества">
+                        </div>
+                        <span class="advantage__text">100 % гарантия <br> качества</span>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__pict">
+                            <img src="img/adv2.png" alt="с нами выгодно">
+                        </div>
+                        <span class="advantage__text">с нами выгодно</span>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__pict">
+                            <img src="img/adv3.png" alt="большой опыт">
+                        </div>
+                        <span class="advantage__text">большой опыт</span>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__pict">
+                            <img src="img/adv4.png" alt="быстрая онлайн поддержка">
+                        </div>
+                        <span class="advantage__text">быстрая онлайн <br> поддержка</span>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__pict">
+                            <img src="img/adv5.png" alt="с заботой о клиенте">
+                        </div>
+                        <span class="advantage__text">с заботой <br> о клиенте</span>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__pict">
+                            <img src="img/adv6.png" alt="точно в срок">
+                        </div>
+                        <span class="advantage__text">точно в срок</span>
+                    </li>
+                </ul>
+
+                <ul class="advantage__steps">
+                    <li class="advantage__step">
+                        <div class="advantage__num">1</div>
+                        <span class="advantage__step-text">Вызов бригады на следующий день после звонка</span>
+                    </li>
+                    <li class="advantage__step">
+                        <div class="advantage__num">2</div>
+                        <span class="advantage__step-text">Вся бригада имеет специальное образование</span>
+                    </li>
+                    <li class="advantage__step">
+                        <div class="advantage__num">3</div>
+                        <span class="advantage__step-text">Длительный срок на рынке</span>
+                    </li>
+                    <li class="advantage__step">
+                        <div class="advantage__num">4</div>
+                        <span class="advantage__step-text">Опыт,качество и скорость</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__block">
+                <button class="button feedback__title" id="fdb">
+                    Отзывы
+                </button>
+                <div class="slider">
+                    <div class="feedback__style">
+                        <div class="feedback__list">
+                            <div class="feedback__item">
+                                <img src="img/woman.png" alt="Анна">
+                                <div class="feedback__name">Анна Говорухина</div>
+                                <div class="feedback__description">Authoritatively incubate multidisciplinary
+                                    partnerships
+                                    and
+                                    user friendly e-markets. Interactively whiteboard client-based leadership skills
+                                </div>
+                                <div class="feedback__click">
+                                    <div class="feedback__like">
+                                        <img src="img/like.png" alt="Like">
+                                        <span class="feedback__span">211</span>
+                                    </div>
+                                    <div class="feedback__dislike">
+                                        <img src="img/dislike.png" alt="Dislike">
+                                        <span class="feedback__span">5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <img src="img/man.png" alt="Анна">
+                                <div class="feedback__name">Виктор Шукшин</div>
+                                <div class="feedback__description"> Synergistically mesh magnetic leadership rather than
+                                    cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7
+                                    metrics
+                                </div>
+                                <div class="feedback__click">
+                                    <div class="feedback__like">
+                                        <img src="img/like.png" alt="Like">
+                                        <span class="feedback__span">143</span>
+                                    </div>
+                                    <div class="feedback__dislike">
+                                        <img src="img/dislike.png" alt="Dislike">
+                                        <span class="feedback__span">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback__style">
+                        <div class="feedback__list">
+                            <div class="feedback__item">
+                                <img src="img/woman.png" alt="Анна">
+                                <div class="feedback__name">Анна Говорухина</div>
+                                <div class="feedback__description">Authoritatively incubate multidisciplinary
+                                    partnerships
+                                    and
+                                    user friendly e-markets. Interactively whiteboard client-based leadership skills
+                                </div>
+                                <div class="feedback__click">
+                                    <div class="feedback__like">
+                                        <img src="img/like.png" alt="Like">
+                                        <span class="feedback__span">211</span>
+                                    </div>
+                                    <div class="feedback__dislike">
+                                        <img src="img/dislike.png" alt="Dislike">
+                                        <span class="feedback__span">5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <img src="img/man.png" alt="Анна">
+                                <div class="feedback__name">Виктор Шукшин</div>
+                                <div class="feedback__description"> Synergistically mesh magnetic leadership rather than
+                                    cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7
+                                    metrics
+                                </div>
+                                <div class="feedback__click">
+                                    <div class="feedback__like">
+                                        <img src="img/like.png" alt="Like">
+                                        <span class="feedback__span">143</span>
+                                    </div>
+                                    <div class="feedback__dislike">
+                                        <img src="img/dislike.png" alt="Dislike">
+                                        <span class="feedback__span">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback__style">
+                        <div class="feedback__list">
+                            <div class="feedback__item">
+                                <img src="img/woman.png" alt="Анна">
+                                <div class="feedback__name">Анна Говорухина</div>
+                                <div class="feedback__description">Authoritatively incubate multidisciplinary
+                                    partnerships
+                                    and
+                                    user friendly e-markets. Interactively whiteboard client-based leadership skills
+                                </div>
+                                <div class="feedback__click">
+                                    <div class="feedback__like">
+                                        <img src="img/like.png" alt="Like">
+                                        <span class="feedback__span">211</span>
+                                    </div>
+                                    <div class="feedback__dislike">
+                                        <img src="img/dislike.png" alt="Dislike">
+                                        <span class="feedback__span">5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <img src="img/man.png" alt="Анна">
+                                <div class="feedback__name">Виктор Шукшин</div>
+                                <div class="feedback__description"> Synergistically mesh magnetic leadership rather than
+                                    cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7
+                                    metrics
+                                </div>
+                                <div class="feedback__click">
+                                    <div class="feedback__like">
+                                        <img src="img/like.png" alt="Like">
+                                        <span class="feedback__span">143</span>
+                                    </div>
+                                    <div class="feedback__dislike">
+                                        <img src="img/dislike.png" alt="Dislike">
+                                        <span class="feedback__span">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__block">
+                <button class="button news__title" id="nws">
+                    Новости
+                </button>
+                <ul class="news__items">
+                    <li class="news__item">
+                        <div class="news__pict">
+                            <img src="img/news1.png" alt="Ремонт раковины">
+                        </div>
+                        <div class="news__info">
+                            <div class="news__info-title">
+                                <span class="news__headnews">ремонт раковины</span>
+                                <span class="news__time">
+                                    <span class="news__time-specific">29</span>
+                                    11.2017
+                                </span>
+                            </div>
+                            <p class="news_text">Holisticly syndicate pandemic value and tactical process
+                                improvements. <br>
+                                Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms.
+                                Seamlessly reintermediate market-driven platforms rather than excellent infrastructures.
+                                Quickly deploy <br> best-of-breed niche markets without </p>
+                        </div>
+                    </li>
+
+                    <li class="news__item">
+                        <img src="img/news2.png" alt="подчинка слива">
+                        <div class="news__info">
+                            <div class="news__info-title">
+                                <span class="news__headnews">подчинка слива</span>
+                                <span class="news__time">
+                                    <span class="news__time-specific">29</span>
+                                    11.2017
+                                </span>
+                            </div>
+                            <p class="news_text">Holisticly syndicate pandemic value and tactical process
+                                improvements. <br> Progressively re-engineer parallel portals vis-a-vis low-risk
+                                high-yield
+                                platforms. Seamlessly reintermediate market-driven platforms rather than excellent
+                                infrastructures. Quickly deploy <br> best-of-breed niche markets without </p>
+                        </div>
+                    </li>
+
+                    <li class="news__item">
+                        <img src="img/news3.png" alt="Ремонт раковины">
+                        <div class="news__info">
+                            <div class="news__info-title">
+                                <span class="news__headnews">ремонт раковины</span>
+                                <span class="news__time">
+                                    <span class="news__time-specific">29</span>
+                                    11.2017
+                                </span>
+                            </div>
+                            <p class="news_text">Holisticly syndicate pandemic value and tactical process
+                                improvements. <br>
+                                Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms.
+                                Seamlessly reintermediate market-driven platforms rather than excellent infrastructures.
+                                Quickly deploy <br> best-of-breed niche markets without </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="news__button">
+                    <button class="button news__btn">читать все новости</button>
+                </div>
+
+                <div class="container">
+                    <div class="request">
+                        <div class="request__form" id="rf">
+                            <h4 class="request__title">оставьте <span class="request__title-color"> заявку</span></h4>
+                            <form class="request__fields" action="#" id="request__fields">
+                                <input class="request__input" type="text" name="user" placeholder="Введите Ваше имя">
+                                <input class="request__input mobile" type="tel" name="mobile"
+                                    placeholder="Введите Ваш номер телефона">
+                                <button class="button request__button">заказать &nbsp; звонок</button>
+                            </form>
+                            <!-- <button class="button request__button">заказать &nbsp; звонок</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="map" id="map">
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__block" id="cntct">
+                <div class="footer__item">
+                    <div class="footer__adr">
+                        <div class="footer__image">
+                            <img src="img/address-icon.png" alt="иконка адреса">
+                            <span class="footer__address">г. Москва, ул. Советская 48 корп.3</span>
+                        </div>
+                        <!-- <span class="footer__address">г. Москва, ул. Советская 48 корп. 3</span> -->
+                        <div class="footer__social">
+                            <a class="footer__round" href="#">
+                                <img class="footer__social-space footer__img" src="img/insta.png"
+                                    alt="инстаграм иконка">
+                            </a>
+                            <a class="footer__round" href="#">
+                                <img class="footer__social-space footer__img" src="img/vk1.png" alt="">
+                            </a>
+                            <a class="footer__round" href="#">
+                                <img class="footer__img" src="img/odnoklassniki.png" alt="одноклассники иконка">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__cntr">
+                        <div class="footer__mail">
+                            <img class="footer__mail-space footer__img" src="img/mail.png" alt="емайл иконка">
+                            <a class="footer__mail2" href="mailto:infosanteh@gmail.com">infosanteh@gmail.com</a>
+                        </div>
+                        <div class="footer__phone">
+                            <img class="footer__phone-space" src="img/phone.png" alt="телефона иконка">
+                            <a class="footer__phone-num" href="tel:+7(863)342-22-21"  >+7 (863) 342-22-21</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="close">&times;</button>
+            <form class="modal__fields" action="#" id="modal__fields">
+                <input class="request__input" type="text" name="modal__user" placeholder="Введите Ваше имя">
+                <input class="request__input mobile" type="tel" name="modal__mobile"
+                    placeholder="Введите Ваш номер телефона">
+                <button class="button navbar__button"> Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/map.js"> </script> -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/y-map.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+</body>
+
+</html>

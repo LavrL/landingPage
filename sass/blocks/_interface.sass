@@ -1,0 +1,41 @@
+* 
+    box-sizing: border-box 
+body 
+    +reg  
+img 
+    max-width: 100%
+// .container
+//     width: 1202px
+//     margin: auto
+.button
+    +reg 
+    background-color: #ffc800
+    cursor: pointer
+    border: none 
+    //text-transform: uppercase
+.container 
+    width: 100%
+    // padding-right: 15px
+    // padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+@media (max-width: 476px) 
+    .container 
+        max-width: 440px
+        margin-left: 5px 
+        //margin-right: 20px 
+@media (max-width: 576px) 
+    .container 
+        width: 96%
+        max-width: 540px
+@media (min-width: 768px) 
+    .container 
+        max-width: 760px
+@media (min-width: 992px) 
+    .container 
+        max-width: 960px
+@media (min-width: 1200px) 
+    .container 
+        max-width: 1170px
+  

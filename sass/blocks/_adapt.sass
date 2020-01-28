@@ -1,0 +1,149 @@
+.wrapper 
+    position: relative
+    overflow-x: hidden
+
+
+.menu 
+    position: fixed
+    left: 0
+    top: 0
+    bottom: -90px
+    width: 25%
+    height: 100vh
+    display: flex
+    align-items: flex-start
+    padding-top: 70px
+    justify-content: center
+    background-color: green  
+    background-size: cover
+    background-position: right
+    background-position-x: -830px
+    background-size: cover
+    border: 2px solid #ffc800
+    border-top: none
+    border-left: none
+    z-index: 2
+    transition: 0.5s
+    transform: translateX(-100%)
+    opacity: 0
+
+.menu__logo 
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+
+
+.menu_yellow 
+    text-decoration: none
+    +reg 
+    color: #ffffff 
+    font-size: 20px
+    z-index: 2
+    margin-bottom: 10px
+
+
+.menu__tel 
+    color: #fffffe
+    margin-left: auto
+    margin-right: auto
+    margin: 10px
+    margin-top: 0
+
+.menu__button 
+    margin-bottom: 35px
+    text-decoration: none
+    color: black
+
+
+.menu:before 
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.7)
+
+
+.menu_active 
+    transform: translateX(0%)
+
+
+.menu__list 
+    display: flex
+    justify-content: space-around
+    align-items: center 
+    height: 50%
+    flex-direction: column
+    z-index: 2
+
+.menu__btn 
+    width: 50px
+    height: 50px
+    background-color: #fff
+    border-radius: 50%
+    position: absolute
+    top: 10px
+    right: -60px
+    opacity: 0.5
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+
+.menu__element 
+    position: absolute
+    top: 50%
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background-color: #222
+
+
+.menu__element:before 
+    content: ''
+    position: absolute
+    top: 50%
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background-color: #222
+    transform: translateY(-5px)
+    transition: 0.5s
+
+
+.menu__element:after 
+    content: ''
+    position: absolute
+    top: 50%
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background-color: #222
+    transform: translateY(5px)
+    transition: 0.5s
+
+.menu__element_active 
+    height: 0 
+
+
+.menu__element_active:before 
+    transform: rotate(-45deg)
+    transform-origin: center
+
+
+.menu__element_active:after 
+    transform: rotate(45deg)
+    transform-origin: center
+
+@media (max-width: 1050px) 
+    .menu 
+        opacity: 1
+@media (max-width: 1050px)
+    .menu
+        width: 45% 

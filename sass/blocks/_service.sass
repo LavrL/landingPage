@@ -1,0 +1,144 @@
+.service
+    background-color: #f7f7f7
+    //position: relative
+    margin-top: 130px 
+    padding-top: 102px 
+    &__block
+        position: relative 
+    &__title 
+        position: absolute 
+        color: #020202
+        +semibold 
+        font-size: 28px
+        font-weight: 400
+        text-transform: uppercase 
+        padding: 12px 65px 
+        top: -137px
+        left: -30px
+        z-index: 1 
+    &__list
+        display: flex
+        //justify-content: center 
+        align-items: center
+        flex-direction: row 
+        flex-wrap: wrap
+        padding-bottom: 88px 
+    &__option
+        display: flex 
+        flex-direction: column 
+        width: 32%
+        height: 240px
+        margin-right: 22px
+        margin-bottom: 18px 
+        position:  relative 
+    &__option:before
+        display: block 
+        position: absolute
+        top: 0
+        left: 0 
+        width: 100%
+        height: 100%
+        content: ''
+        background-color: rgba(0, 0, 0, 0.4)
+        opacity: 1
+        z-index: 0 
+    &__option:hover:before 
+        opacity: 0 
+        transition: 0.2s 
+    &__option:nth-child(3)
+        margin-right: 0
+    &__option:nth-child(6)
+        margin-right: 0 
+    &__heating
+        background-image: (url('../img/s1.png'))
+        background-size: cover 
+    &__plumbing
+        background-size: cover
+        background-image: url('../img/s2.png')
+    &__sewage
+        background-size: cover
+        background-image: url('../img/s3.png')
+    &__description
+        +reg
+        display: block 
+        color: #fcfafa
+        font-size: 20px
+        font-weight: 400
+        margin-top: 55px
+        margin-left: auto
+        margin-right: auto
+        width: 260px
+        text-align: center 
+        line-height: 26px 
+        margin-bottom: 25px 
+    &__button
+        display: block
+        text-align: center 
+    &__btn
+        //display: block 
+        padding: 8px 15px 
+        +reg 
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase 
+    &__option:hover .service__description-hide
+        display: none
+    &__option:hover .service__description:before
+        //display: block  
+        content: 'Здесь будет короткое описание о данной услуге'
+        +reg 
+        width: 240px
+        //width: 100%  
+        color: #000000
+        text-align: center 
+    &__option:hover .service__description-message
+        font-size: 20px
+        //width: 300px
+    &__btn
+        font-size: 15px
+        position: relative 
+    &__btn:hover .service__hide 
+        display: none 
+    &__btn:hover:before 
+        content: 'ОТ 500 Р.'
+        +reg 
+        width: 138px 
+        padding: 8px 20px
+        color: white 
+    &__btn:hover 
+        background-color: black 
+@media (max-width: 1200px)
+    .service 
+        &__list 
+            display: flex
+            align-items: center 
+            //justify-content: center 
+        &__option 
+            width: 44% 
+        &__option:nth-child(3) 
+            margin-right: 22px
+@media (max-width: 768px)
+    .service
+        &__list
+            display: flex
+            align-items: center
+            justify-content: center 
+        &__option
+            width: 50%
+@media (max-width: 1200px)
+    .service
+        &__list
+            justify-content: center 
+        &__option:last-child
+            margin-right: 22px 
+@media (max-width: 596px)
+    .service
+        &__option
+            width: 90%
+            margin-right: 22px 
+            margin-left: 22px 
+
+        
+
+
+    

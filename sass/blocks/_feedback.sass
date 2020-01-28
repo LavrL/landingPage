@@ -1,0 +1,98 @@
+.feedback
+    background-color: #010101
+    padding-top: 112px 
+    padding-bottom: 30px
+    &__container
+        //position: relative 
+        width: 1170px
+        margin: auto
+    &__block
+        position: relative
+        //margin-bottom: 100px
+    &__title 
+        position: absolute 
+        color: #020202
+        +semibold 
+        font-size: 28px
+        font-weight: 400
+        text-transform: uppercase 
+        padding: 12px 60px 
+        top: -135px
+        left: -25px
+        z-index: 1 
+    &__list
+        display: flex  
+        justify-content: space-between
+        flex-direction: row 
+        //margin-left: 5px 
+        //padding-top: 50px
+        //margin-bottom: 100px 
+        //margin-left: 10px 
+        //padding-bottom: 5px
+    &__style
+        display: flex
+        flex-direction: column
+        align-items: center 
+        justify-content: center 
+    &__item
+        display: flex 
+        flex-direction: column
+        align-items: center 
+        margin-bottom: 120px 
+        margin-right: 220px
+    &__name 
+        +semibold 
+        color: #ffc800
+        font-size: 20px
+        font-weight: 400
+        line-height: 28px
+        margin-top: 10px
+        margin-bottom: 17px
+    &__description 
+        +reg 
+        color: #fffffd
+        font-size: 20px
+        font-weight: 400
+        line-height: 28px
+        width: 480px
+        align-items: center 
+        text-align: center 
+        margin-bottom: 25px
+    &__click
+        display: flex  
+    &__span
+        margin-left: 10px
+        color: #fefbfb
+        +reg 
+        font-size: 15px
+        font-weight: 400
+    &__like
+        display: flex 
+        justify-content: center
+        align-items: center 
+        flex-direction: row   
+        margin-right: 30px 
+        //background-color: #ffc800
+    &__dislike
+        display: flex 
+        justify-content: center
+        align-items: center 
+        flex-direction: row 
+.comments__slider:focus 
+    outline: none
+@media (max-width: 1200px)
+    .feedback
+        &__list
+            flex-direction: column 
+        &__item
+            margin-right: 0px 
+            justify-content: center 
+
+@media (max-width: 768px)
+    .feedback
+        &__list 
+            flex-direction: column 
+@media (max-width: 596px)
+    .feedback
+        &__description
+            width: 100% 

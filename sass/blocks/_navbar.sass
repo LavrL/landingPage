@@ -1,0 +1,111 @@
+.navbar
+    position: relative
+    &:after 
+        content: ''
+        width: 40%
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
+        background-color: #f7f7f7 
+        z-index: -1 
+    &-block 
+        display: flex 
+    &__logo
+        &-left
+            display: flex 
+            background-color: #ffffff 
+        &-text
+            display: block 
+            font-size: 15px
+            font-weight: 400
+            text-transform: uppercase
+            +semibold
+            color: #010101
+            font-style: italic  
+            text-decoration: none   
+        &-image 
+            //display: block
+            margin: auto 
+            border: 0 
+    &__menu
+        display: flex 
+        margin: 0
+        padding: 0
+        align-items: center
+        margin-left: 140px 
+        &__link
+            list-style: none
+            text-decoration: none
+            +reg 
+            position: relative 
+            color: #000000 
+            //vertical-align: super 
+            margin-bottom: 5px 
+        &__link:after
+            content: ''
+            width: 0 
+            height: 3px
+            background-color: #ffc800
+            position: absolute
+            left: 5%
+            bottom: 0
+        &__link:hover:after 
+            width: 90%
+        &__link:hover
+            padding-bottom: 4px 
+            color: #ffc800    
+        &-item 
+            //border-right: 1px solid #d9d9d9
+            padding-right:  25px 
+            margin-right: 31px 
+            +reg 
+            font-size: 16px
+            font-weight: 400
+            color: #000000
+            position: relative 
+            border-right: 2px solid #d9d9d9 
+        &-item:last-child
+            border-right: none 
+            margin-right: none 
+    &__contacts
+        display: flex
+        align-items: center 
+    &__phone
+        display: flex  
+        //vertical-align: middle
+        margin-left: 58px 
+    &__tel
+        +reg  
+        font-size: 18px 
+        text-decoration: none
+        color: #000000
+        margin-right: 48px
+        margin-left: 5px 
+    &__button
+        padding: 6px 15px
+        +reg 
+        font-size: 14px
+        font-weight: 400
+        border: 0 
+        color: #030303
+
+a
+    text-decoration: none
+    display: inline-block 
+    vertical-align: top 
+    text-align: center 
+@media (max-width: 1050px)
+    .navbar-block
+        display: none 
+@media (max-width: 1200px)
+    .navbar
+        &__menu
+            margin-left: 40px 
+            &-item 
+                padding-right:  15px 
+                margin-right: 25px 
+        &__tel
+            margin-right: 17px
+
+    

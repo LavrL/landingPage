@@ -1,0 +1,229 @@
+.offer 
+    background: url('../img/offer-bg.png') no-repeat 
+    background-size: contain
+    background-position: center right 
+    position: relative
+    &:before 
+        content: '' 
+        width: 50%
+        height: 100%
+        position: absolute
+        background-color: #fff  
+        top: 0
+        left: 0 
+    &-block 
+        width: 50% 
+        padding-right: 90px 
+        position: relative
+    &__title 
+        max-width: 360px 
+        line-height: 35px
+        margin-bottom: 20px
+        text-align: left 
+    &__subtitle 
+        max-width: 250px 
+        margin-bottom: 30px 
+        +reg 
+        font-size: 16px 
+        line-height: 20px 
+    &__input 
+        margin-bottom: 30px 
+        width: 240px
+        &:first-child 
+            //margin-right: 10px 
+            align-items: right 
+    &__button 
+        width: 100%
+        padding: 27px 100px 
+        font-size: 16px
+        line-height: 18px 
+        +bold   
+        margin-bottom: 25px 
+    &__contacts
+        font-size: 15px 
+        +reg 
+        line-height: 24px 
+        max-width: 230px  
+        &-phone 
+            +bold 
+            color: $text-color
+            text-decoration: none 
+        &:last-child 
+            max-width: 210px 
+        &-right
+            padding-left:  10px
+        &-left 
+
+@media (max-width: 1200px)
+    .offer 
+        background-size: cover 
+        &__input 
+            width: 100%
+            margin-bottom: 10px 
+        &__button 
+            font-size: 13px 
+            padding: 19px 30px 17px 30px 
+@media (max-width:  768px)
+    .offer 
+        background: #fff 
+        &__button 
+            padding: 19px 30px 17px 30px
+        &-block
+            width: 100% 
+            padding-right: 0
+            padding: 50px 20px 
+        &__contacts 
+            &:first-child 
+                margin-bottom: 18px 
+    .section 
+        &-contact 
+            display: flex 
+            flex-direction: column  
+            justify-content: space-between  
+.input 
+    border: 1px solid $border-input 
+    padding: 20px 26px 
+    font-size: 15px
+    border-radius: 10px 
+@media (max-width: 325px) 
+    .form 
+        //padding: 0 
+        &__title 
+            //padding-top: 60px !important  
+            //padding-left: 25px 
+            padding-top: 10px !important 
+            padding-right: 10px !important
+            padding-left: 10px !important 
+            line-height: 25.35px !important
+            font-size: 18px !important
+            +bold 
+            margin-bottom: 25px !important 
+        &__description
+            font-size: 14px !important
+            line-height: 24px !important
+            text-align: center !important 
+            padding-left: 90px !important
+            padding-right: 95px !important
+        &__subtitle 
+            font-size: 14px !important
+            +reg 
+            font-weight: 400 !important 
+    .offer 
+        &__title 
+            font-size: 18px
+            line-height: 22px !important 
+            font-weight: 400 
+            width: 270px
+            +bold 
+            margin-bottom: 18px !important
+        &__subtitle 
+            +reg 
+            font-size: 14px
+            font-weight: 400 
+            margin-bottom: 25px !important
+            line-height: 16px !important
+        &-block 
+            padding-top: 50px 
+            line-height: 16px !important 
+            font-size: 16px  
+        &__button 
+            font-size: 14px
+            font-weight: 400
+            line-height: 18px
+            +bold 
+            padding: 20px 65px 18px 64px
+            margin-bottom: 19px !important 
+    .input 
+        border-radius: 10px 
+        border: 1px solid #dddddd
+        font-size: 15px
+        line-height: 24px
+        font-weight: 400
+        +reg 
+        width: 275px
+        margin-bottom: 8px !important 
+    .input:first-child 
+        margin-bottom: 5px 
+    .offer
+        &__contacts 
+            padding-left: 5px 
+        &__contacts:first-child 
+            margin-bottom: 6px 
+    .portfolio 
+        &__title 
+            font-size: 18px !important
+            font-weight: 400 !important
+            line-height: 22px !important
+            padding-top: 40px
+            width: 285px  
+            +bold 
+            margin-bottom: 40px !important 
+    .slider 
+        margin-bottom: 48px !important 
+        &__image 
+            max-width: 75% 
+    .interview 
+        padding: 33px 40px 68px 21px !important 
+        &__title 
+            font-size: 18px !important
+            font-weight: 400 !important
+            +bold 
+            line-height: 22px !important
+            padding-right: 35px  
+            width: 276px  
+            margin-bottom: 15px !important  
+            padding-top: 25px !important 
+        &__subtitle  
+            font-size: 14px !important
+            font-weight: 400 !important
+            +reg 
+            //width: 172px !important 
+            //margin-right: 124px !important 
+            margin-bottom: 42px !important 
+        &-list 
+            +reg  
+            font-size: 14px !important
+            font-weight: 700 !important
+            max-width: 550px !important
+            &__counter 
+                margin-right: 10px !important
+            &__text 
+                font-size: 14px !important
+                font-weight: 400 !important 
+                +reg 
+            &__text:nth-child(3)
+                padding-top: 30px !important 
+            &__item:nth-child(2) 
+                padding-right: 0 !important
+                width: 280px !important
+                margin-bottom: 30px !important
+            &__item:nth-child(3)
+                margin-bottom: 23px !important 
+            &_item:nth-child(3)
+                width: 280px !important  
+    .brif
+        &__form
+            padding: 0 !important
+        &__interview 
+            padding-top: 15px !important
+        &__input
+            max-width: 85% !important
+        &__input:nth-child(2)
+            margin-bottom: 8px !important 
+        &__button 
+            max-width: 85% !important 
+            font-size: 14px
+            font-weight: 400
+            +bold 
+            margin-bottom: 28px !important 
+    .contacts 
+        &-title 
+            +bold 
+            font-size: 18px !important 
+            font-weight: 400 !important 
+            line-height: 20px !important
+            margin-bottom: 38px !important 
+        &-list__icon
+            margin-right: 15px !important
+        &-list__item
+            align-items: baseline !important  

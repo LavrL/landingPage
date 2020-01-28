@@ -1,0 +1,103 @@
+.footer 
+    background-color: #000000
+    position: relative 
+    &__item
+        display: flex
+        flex-direction: row 
+        padding-top: 55px
+        padding-bottom: 50px 
+        //margin-left: 375px
+    &__image
+        margin-right: 15px 
+        //padding: 5px 5px 
+    &_img
+        vertical-align: baseline 
+        //padding: 5px 5px
+    &__address
+        +reg 
+        color: #fdfcfc
+        font-size: 20px
+        font-weight: 400
+        margin-right: 150px
+    &__round
+        width: 26px
+        height: 26px
+        text-align: center
+        background-color: white 
+        border-radius: 50%
+        padding: 5px 5px 
+        cursor: pointer 
+        margin-right: 10px
+    &__round:last-child
+        margin-right: 0px 
+    &__round:hover
+        background-color: #ffc800 
+    &__social
+        display: flex 
+        margin-right: 145px
+        &-space 
+            margin-right: 8px
+            //padding: 5px 5px 
+    // &__social-space:hover
+    //     background-color: #ffc800
+    &__mail 
+        +reg 
+        color: #fefefe
+        font-size: 18px
+        font-weight: 400
+        margin-right: 22px 
+        //line-height: 40px
+        &-space 
+            margin-right: 4px 
+    &__mail2
+        text-decoration: none 
+        color: #fffffe
+    &__mail:after
+        content: '|'
+        width: 1px
+        height: 15px
+        color: #393939
+    &__phone 
+        //display: flex 
+        &-space 
+            margin-right: 6px 
+        &-num 
+            font-size: 18px
+            +reg 
+            color: #fefefe
+    &__adr 
+        display: flex
+    &__cntr
+        display: flex 
+
+@media (max-width: 1200px)
+    .footer
+        &__adr, &__cntr 
+            flex-direction: column
+        &__item
+            justify-content: center 
+             
+@media (max-width: 992px)
+    .footer
+        &__address 
+            margin-right: 50px 
+        
+@media (max-width: 768px)
+    .footer 
+        &__address
+            margin-right: 20px 
+// @media (max-width: 596px)
+//     .footer
+//         &__social
+//             margin-right: 0px 
+@media (max-width: 596px) 
+    .footer
+        &__item
+            flex-direction: column 
+        &__block
+            margin-left: 30px 
+        &__image, &__social, &__mail 
+            margin-bottom: 20px 
+        
+
+
