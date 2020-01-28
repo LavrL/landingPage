@@ -467,7 +467,7 @@ textarea {
 }
 
 @font-face {
-  font-family: 'Proxima Nova Rg';
+  font-family: "Proxima Nova Rg";
   src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
   src: local("../fonts/ProximaNova/Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -475,7 +475,7 @@ textarea {
 }
 
 @font-face {
-  font-family: 'Proxima Nova Semibold';
+  font-family: "Proxima Nova Semibold";
   src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
   src: local("../fonts/ProximaNova/Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
@@ -488,7 +488,7 @@ textarea {
 }
 
 body {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
 }
 
 img {
@@ -496,7 +496,7 @@ img {
 }
 
 .button {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   background-color: #ffc800;
   cursor: pointer;
   border: none;
@@ -573,7 +573,7 @@ img {
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   color: #010101;
   font-style: italic;
   text-decoration: none;
@@ -599,7 +599,7 @@ img {
 .navbar__menu__link {
   list-style: none;
   text-decoration: none;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   position: relative;
   color: #000000;
   margin-bottom: 5px;
@@ -627,7 +627,7 @@ img {
 .navbar__menu-item {
   padding-right: 25px;
   margin-right: 31px;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #000000;
@@ -657,7 +657,7 @@ img {
 }
 
 .navbar__tel {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 18px;
   text-decoration: none;
   color: #000000;
@@ -667,7 +667,7 @@ img {
 
 .navbar__button {
   padding: 6px 15px;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
@@ -715,7 +715,7 @@ a {
 
 .hero__title {
   color: #ffc800;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -724,7 +724,7 @@ a {
 
 .hero__subtitle {
   color: #fffffe;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 35px;
   font-weight: 400;
   margin-bottom: 30px;
@@ -732,7 +732,7 @@ a {
 
 .hero__description {
   opacity: 0.42;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
@@ -743,7 +743,7 @@ a {
 .hero__button {
   width: 185px;
   color: #030303;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -876,7 +876,7 @@ li.slick-active {
 .service__title {
   position: absolute;
   color: #020202;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
@@ -960,7 +960,7 @@ li.slick-active {
 }
 
 .service__description {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   display: block;
   color: #fcfafa;
   font-size: 20px;
@@ -981,7 +981,7 @@ li.slick-active {
 
 .service__btn {
   padding: 8px 15px;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
@@ -993,7 +993,7 @@ li.slick-active {
 
 .service__option:hover .service__description:before {
   content: 'Здесь будет короткое описание о данной услуге';
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   width: 240px;
   color: #000000;
   text-align: center;
@@ -1014,7 +1014,7 @@ li.slick-active {
 
 .service__btn:hover:before {
   content: 'ОТ 500 Р.';
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   width: 138px;
   padding: 8px 20px;
   color: white;
@@ -1096,7 +1096,7 @@ li.slick-active {
 .advantage__title {
   position: absolute;
   color: #020202;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1153,7 +1153,7 @@ li.slick-active {
 
 .advantage__text {
   margin-bottom: 20px;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
@@ -1178,7 +1178,7 @@ li.slick-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   margin-bottom: 60px;
   padding-left: 0px;
 }
@@ -1187,7 +1187,7 @@ li.slick-active {
   position: relative;
   padding-left: 61px;
   top: 5px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #020202;
@@ -1214,7 +1214,7 @@ li.slick-active {
   text-transform: uppercase;
   color: #ffc800;
   position: relative;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
 }
 
 .advantage__step {
@@ -1344,7 +1344,7 @@ li.slick-active {
 .feedback__title {
   position: absolute;
   color: #020202;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1399,7 +1399,7 @@ li.slick-active {
 }
 
 .feedback__name {
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   color: #ffc800;
   font-size: 20px;
   font-weight: 400;
@@ -1409,7 +1409,7 @@ li.slick-active {
 }
 
 .feedback__description {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #fffffd;
   font-size: 20px;
   font-weight: 400;
@@ -1431,7 +1431,7 @@ li.slick-active {
 .feedback__span {
   margin-left: 10px;
   color: #fefbfb;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
@@ -1517,7 +1517,7 @@ li.slick-active {
 .news__title {
   position: absolute;
   color: #020202;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1555,7 +1555,7 @@ li.slick-active {
 }
 
 .news__headnews {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #020202;
   font-size: 20px;
   font-weight: 700;
@@ -1567,7 +1567,7 @@ li.slick-active {
 }
 
 .news_text {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #020202;
   font-size: 18px;
   font-weight: 400;
@@ -1595,7 +1595,7 @@ li.slick-active {
 }
 
 .news__btn {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #020202;
   font-size: 20px;
   font-weight: 400;
@@ -1611,7 +1611,7 @@ li.slick-active {
 .news__time-specific {
   background-color: #ffc800;
   color: black;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 @media (max-width: 1000px) {
@@ -1681,7 +1681,7 @@ li.slick-active {
 }
 
 .footer__address {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #fdfcfc;
   font-size: 20px;
   font-weight: 400;
@@ -1719,7 +1719,7 @@ li.slick-active {
 }
 
 .footer__mail {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #fefefe;
   font-size: 18px;
   font-weight: 400;
@@ -1748,7 +1748,7 @@ li.slick-active {
 
 .footer__phone-num {
   font-size: 18px;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #fefefe;
 }
 
@@ -1827,7 +1827,7 @@ li.slick-active {
 }
 
 .request__button {
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #020202;
   font-size: 20px;
   font-weight: 400;
@@ -1839,7 +1839,7 @@ li.slick-active {
 .request__title {
   text-align: center;
   color: #030303;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
@@ -1848,7 +1848,7 @@ li.slick-active {
 }
 
 .request__title-color {
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: "Proxima Nova Semibold", sans-serif;
   color: #ffc800;
 }
 
@@ -1943,7 +1943,7 @@ input.invalid {
 
 .menu_yellow {
   text-decoration: none;
-  font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   color: #ffffff;
   font-size: 20px;
   z-index: 2;

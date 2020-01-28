@@ -1,34 +1,31 @@
 @font-face {
-    font-family: 'Proxima Nova Rg';
-    src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
-    src: local('../fonts/ProximaNova/Proxima Nova Regular'), local('ProximaNova-Regular'),
-        url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
-        url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
-        url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: local("../fonts/ProximaNova/Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"),
+    url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proxima Nova Semibold';
-    src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot');
-    src: local('../fonts/ProximaNova/Proxima Nova Semibold'), local('ProximaNova-Semibold'),
-        url('../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ProximaNova/ProximaNova-Semibold.woff2') format('woff2'),
-        url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
-        url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Proxima Nova Semibold";
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
+  src: local("../fonts/ProximaNova/Proxima Nova Semibold"), local("ProximaNova-Semibold"),
+    url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2"),
+    url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"),
+    url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
-
 @mixin reg {
-    font-family: 'Proxima Nova Rg', sans-serif;
-    //font-weight: 400;
+  font-family: "Proxima Nova Rg", sans-serif;
 }
 
 @mixin semibold {
-    font-family: 'Proxima Nova Semibold', sans-serif;
-    //font-weight: 400;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }

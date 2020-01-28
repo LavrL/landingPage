@@ -1,6 +1,5 @@
 .service
     background-color: #f7f7f7
-    //position: relative
     margin-top: 130px 
     padding-top: 102px 
     &__block
@@ -18,7 +17,6 @@
         z-index: 1 
     &__list
         display: flex
-        //justify-content: center 
         align-items: center
         flex-direction: row 
         flex-wrap: wrap
@@ -75,7 +73,6 @@
         display: block
         text-align: center 
     &__btn
-        //display: block 
         padding: 8px 15px 
         +reg 
         font-size: 15px
@@ -83,17 +80,14 @@
         text-transform: uppercase 
     &__option:hover .service__description-hide
         display: none
-    &__option:hover .service__description:before
-        //display: block  
+    &__option:hover .service__description:before 
         content: 'Здесь будет короткое описание о данной услуге'
         +reg 
-        width: 240px
-        //width: 100%  
+        width: 240px 
         color: #000000
         text-align: center 
     &__option:hover .service__description-message
         font-size: 20px
-        //width: 300px
     &__btn
         font-size: 15px
         position: relative 
@@ -112,7 +106,6 @@
         &__list 
             display: flex
             align-items: center 
-            //justify-content: center 
         &__option 
             width: 44% 
         &__option:nth-child(3) 
@@ -137,8 +130,3 @@
             width: 90%
             margin-right: 22px 
             margin-left: 22px 
-
-        
-
-
-    
