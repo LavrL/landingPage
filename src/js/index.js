@@ -1,3 +1,16 @@
+import '../css/style.css';
+
+import $ from 'jquery';
+import 'slick-carousel';
+
+import "jquery.validate";
+import 'imports-loader?define=>false,module.exports=>false!jquery-validation';
+
+import "jquery.maskedinput";
+import 'jquery.inputmask';
+// Add extensions as necessary make sure you remember to add the corresponding aliases in the webpack config
+import 'inputmask.numeric.extensions';
+
 var btn = $('.button-top');
 
 $(window).scroll(function () {
@@ -59,35 +72,35 @@ $(document).ready(function () {
     focusInvalid: "true",
     errorClass: "invalid",
   }),
-  $('#modal__fields').validate({
-    rules: {
-      modal__user: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
+    $('#modal__fields').validate({
+      rules: {
+        modal__user: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        modal__mobile: {
+          required: true
+        }
       },
-      modal__mobile: {
-        required: true
-      }
-    },
-    messages: {
-      modal__user: {
-        required: "Укажите имя",
-        minlength: jQuery.validator.format("Минимальное кол-во знаков: {0} "),
-        maxlength: jQuery.validator.format("Максимальное кол-во знаков - 15 ")
+      messages: {
+        modal__user: {
+          required: "Укажите имя",
+          minlength: jQuery.validator.format("Минимальное кол-во знаков: {0} "),
+          maxlength: jQuery.validator.format("Максимальное кол-во знаков - 15 ")
+        },
+        modal__mobile: {
+          required: "Укажите номер телефона"
+        }
       },
-      modal__mobile: {
-        required: "Укажите номер телефона"
-      }
-    },
-    focusInvalid: "true",
-    errorClass: "invalid",
-  })
+      focusInvalid: "true",
+      errorClass: "invalid",
+    })
 })
 
-$(document).ready(function () {
-  $('.phone1').mask('+7 (999) 999-99-99');
-  $('.mobile').mask('+7 (999) 999-99-99');
+jQuery(function($) {
+  $('.phone1').inputmask('+7 (999) 999-99-99');
+  $('.mobile').inputmask('+7 (999) 999-99-99');
 });
 
 $('.menu__btn').on('click', function () {
@@ -98,12 +111,56 @@ $('.menu__btn').on('click', function () {
 
 var button = document.querySelector('#callme');
 var modal = document.querySelector('#modal');
-var close= document.querySelector('#close');
+var close = document.querySelector('#close');
 
-button.addEventListener('click', function() {
-    modal.classList.add('modal_active');
+button.addEventListener('click', function () {
+  modal.classList.add('modal_active');
 });
 
-close.addEventListener('click', function(){
-    modal.classList.remove('modal_active');
+close.addEventListener('click', function () {
+  modal.classList.remove('modal_active');
 });
+
+// y-map
+import 'ymaps';
+
+ymaps.ready(init);
+
+function init() {
+  var myMap;
+  $('#map').click(function () {
+    if (!myMap) {
+      myMap = new ymaps.Map('map', {
+        center: [55.798652, 37.765875],
+        zoom: 13
+      }, {
+        searchControlProvider: 'yandex#search'
+      });
+      var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+
+        myPlacemarkWithContent = new ymaps.Placemark([55.798652, 37.765875], {
+          hintContent: 'Infosanteh',
+          balloonContent: 'г. Москва, ул. Советская 48 корп.3',
+
+        },
+          {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: 'img/map-sign.png',
+            iconImageSize: [100, 100],
+            iconImageOffset: [-30, -30],
+            iconContentOffset: [15, 15],
+            iconContentLayout: MyIconContentLayout
+          });
+
+      myMap.behaviors.disable('scrollZoom');
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        myMap.behaviors.disable('drag');
+      }
+      myMap.geoObjects
+        .add(myPlacemarkWithContent);
+    }
+  });
+}

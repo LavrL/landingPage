@@ -1,28 +1,82 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require("webpack");
+
+function _path(p) {
+    return path.join(__dirname, p);
+}
 
 module.exports = {
     mode: 'development',
     entry: {
+        jquerymaskedinput: './src/js/jquery.maskedinput.min.js',
+        jqueryvalidate: './src/js/jquery.validate.min.js',
+        slick: './src/js/slick.min.js',
         main: './src/js/index.js',
-        jquerymin: './src/js/jquery.min.js'
+    },
+    resolve: {
+        extensions: ['.js', '.ts'],
+        alias: {
+            "jquery.validate": "jquery-validation/dist/jquery.validate",
+            'inputmask.dependencyLib': _path('node_modules/jquery.inputmask/dist/inputmask/inputmask.dependencyLib'),
+            'inputmask': _path('node_modules/jquery.inputmask/dist/inputmask/inputmask'),
+            'jquery.inputmask': _path('node_modules/jquery.inputmask/dist/inputmask/jquery.inputmask'),
+            'inputmask.numeric.extensions': _path('node_modules/jquery.inputmask/dist/inputmask/inputmask.numeric.extensions')
+        },
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
     },
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        port: 4200
+    },
     plugins: [
         new HTMLWebpackPlugin({
             template: './src/index.html'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, 'src/img'),
+                to: path.resolve(__dirname, 'dist/img')
+            }
+        ]),
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css'
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
     ],
     module: {
         rules: [
             {
-                test:/\.css$/,
-                use:['style-loader','css-loader']
+                test: /\.css$/,
+                use: [{
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {},
+                },
+                    'css-loader'
+                ]
+            },
+            {
+                test: /\.(png|jpg|svg|gif)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.(ttf|woff|woff2|eot)$/,
+                use: ['file-loader']
             }
         ]
     }
