@@ -88,5 +88,22 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.phone1').mask('+7 (999) 999-99-99');
   $('.mobile').mask('+7 (999) 999-99-99');
+});
 
+$('.menu__btn').on('click', function () {
+  event.preventDefault();
+  $('.menu').toggleClass('menu_active');
+  $('.menu__element').toggleClass('menu__element_active');
+})
+
+var button = document.querySelector('#callme');
+var modal = document.querySelector('#modal');
+var close= document.querySelector('#close');
+
+button.addEventListener('click', function() {
+    modal.classList.add('modal_active');
+});
+
+close.addEventListener('click', function(){
+    modal.classList.remove('modal_active');
 });
