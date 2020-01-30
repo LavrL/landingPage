@@ -1,6 +1,7 @@
 /node_modules
-.DS_Store
 robots.txt
+.DS_Store 
 
 /build
 /dist
+

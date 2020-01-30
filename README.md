@@ -1,3 +1,14 @@
-### Desktop and responsive landing page with modal box 
+# Landing Page
 
-https://ll-dev.ru/diplom/
+Desktop and Responsive Landing page with Modal box.
+
+### [View the demo](https://ll-dev.ru/diplom/)
+
+## Used
+
+- [JQuery](https://jquery.com/)
+- [Slick](https://kenwheeler.github.io/slick/)
+- [Yandex map](https://yandex.ru/maps/)
+- [Webpack](https://webpack.js.org/)
+- [Sass](https://sass-lang.com/)
+- [ESLint](https://eslint.org/)

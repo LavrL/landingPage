@@ -11,6 +11,8 @@ import 'jquery.inputmask';
 // Add extensions as necessary make sure you remember to add the corresponding aliases in the webpack config
 import 'inputmask.numeric.extensions';
 
+import 'ymaps';
+
 var btn = $('.button-top');
 
 $(window).scroll(function () {
@@ -46,7 +48,7 @@ $(document).ready(function () {
   });
 });
 
-//JQuery валидация
+
 $(document).ready(function () {
   $('#request__fields').validate({
     rules: {
@@ -120,9 +122,6 @@ button.addEventListener('click', function () {
 close.addEventListener('click', function () {
   modal.classList.remove('modal_active');
 });
-
-// y-map
-import 'ymaps';
 
 ymaps.ready(init);
 

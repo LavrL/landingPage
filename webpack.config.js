@@ -3,24 +3,36 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require("webpack");
+const webpack = require('webpack');
+const OptimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
+
 
 function _path(p) {
     return path.join(__dirname, p);
 }
 
+const jsLoaders = () => {
+    const loaders = [{
+        loader: 'babel-loader',
+        options: {
+            presets: [
+                '@babel/preset-env'
+            ]}
+        }]
+loaders.push('eslint-loader');
+return loaders
+
+}
+
 module.exports = {
-    mode: 'development',
     entry: {
-        jquerymaskedinput: './src/js/jquery.maskedinput.min.js',
-        jqueryvalidate: './src/js/jquery.validate.min.js',
-        slick: './src/js/slick.min.js',
         main: './src/js/index.js',
     },
     resolve: {
         extensions: ['.js', '.ts'],
         alias: {
-            "jquery.validate": "jquery-validation/dist/jquery.validate",
+            'jquery.validate': 'jquery-validation/dist/jquery.validate',
             'inputmask.dependencyLib': _path('node_modules/jquery.inputmask/dist/inputmask/inputmask.dependencyLib'),
             'inputmask': _path('node_modules/jquery.inputmask/dist/inputmask/inputmask'),
             'jquery.inputmask': _path('node_modules/jquery.inputmask/dist/inputmask/jquery.inputmask'),
@@ -30,7 +42,11 @@ module.exports = {
     optimization: {
         splitChunks: {
             chunks: 'all'
-        }
+        },
+        minimizer: [
+            new OptimizeCssAssetPlugin(),
+            new TerserWebpackPlugin()
+        ]
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -41,7 +57,10 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            minify: {
+                collapseWhitespace: false 
+            }
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
@@ -54,9 +73,9 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
         new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery"
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         })
     ],
     module: {
@@ -76,7 +95,12 @@ module.exports = {
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader']
+                use: ['file-loader?name=/fonts/[name].[ext]']
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: jsLoaders()
             }
         ]
     }
