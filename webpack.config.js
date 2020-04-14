@@ -1,11 +1,12 @@
-const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 const OptimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+
+const path = require('path');
+const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 function _path(p) {
@@ -18,11 +19,11 @@ const jsLoaders = () => {
         options: {
             presets: [
                 '@babel/preset-env'
-            ]}
-        }]
-loaders.push('eslint-loader');
-return loaders
-
+            ]
+        }
+    }]
+    loaders.push('eslint-loader');
+    return loaders
 }
 
 module.exports = {
@@ -59,7 +60,7 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/index.html',
             minify: {
-                collapseWhitespace: true 
+                collapseWhitespace: true
             }
         }),
         new CleanWebpackPlugin(),
