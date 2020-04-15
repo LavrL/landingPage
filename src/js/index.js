@@ -10,7 +10,7 @@ import 'imports-loader?define=>false,module.exports=>false!jquery-validation';
 import 'inputmask.numeric.extensions';
 
 import './modal';
-import './map'; 
+import './map';
 
 // slider and main validation
 $(document).ready(function () {
@@ -22,54 +22,31 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
   });
 
-  $('#request__fields').validate({
-    rules: {
-      user: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
+  $('form').each(function () {
+    $(this).validate({
+      rules: {
+        modal__user: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        modal__mobile: {
+          required: true
+        }
       },
-      mobile: {
-        required: true
-      }
-    },
-    messages: {
-      user: {
-        required: "Укажите имя",
-        minlength: jQuery.validator.format("Минимальное кол-во знаков: {0} "),
-        maxlength: jQuery.validator.format("Максимальное кол-во знаков - 15 ")
+      messages: {
+        modal__user: {
+          required: "Укажите имя",
+          minlength: jQuery.validator.format("Минимальное кол-во знаков: {0} "),
+          maxlength: jQuery.validator.format("Максимальное кол-во знаков - 15 ")
+        },
+        modal__mobile: {
+          required: "Укажите номер телефона"
+        }
       },
-      mobile: {
-        required: "Укажите номер телефона"
-      }
-    },
-    focusInvalid: "true",
-    errorClass: "invalid",
-  });
-
-  $('#modal__fields').validate({
-    rules: {
-      modal__user: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      },
-      modal__mobile: {
-        required: true
-      }
-    },
-    messages: {
-      modal__user: {
-        required: "Укажите имя",
-        minlength: jQuery.validator.format("Минимальное кол-во знаков: {0} "),
-        maxlength: jQuery.validator.format("Максимальное кол-во знаков - 15 ")
-      },
-      modal__mobile: {
-        required: "Укажите номер телефона"
-      }
-    },
-    focusInvalid: "true",
-    errorClass: "invalid",
+      focusInvalid: "true",
+      errorClass: "invalid",
+    });
   });
 
   $('.mobile').inputmask('+7 (999) 999-99-99');
