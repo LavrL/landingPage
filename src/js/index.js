@@ -1,8 +1,8 @@
 import '../css/style.css';
 
 import $ from 'jquery';
-import "jquery.validate";
-import "jquery.maskedinput";
+import 'jquery.validate';
+import 'jquery.maskedinput';
 import 'jquery.inputmask';
 
 import 'slick-carousel';

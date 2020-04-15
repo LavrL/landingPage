@@ -19,7 +19,8 @@ const jsLoaders = () => {
         options: {
             presets: [
                 '@babel/preset-env'
-            ]
+            ],
+            plugins: ['@babel/plugin-transform-modules-commonjs']
         }
     }]
     loaders.push('eslint-loader');

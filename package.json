@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --collectCoverage",
+    "test": "jest",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/LavrL/landingPage#readme",
   "devDependencies": {
     "@babel/core": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
     "@babel/preset-env": "^7.8.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",

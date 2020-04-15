@@ -1,9 +1,8 @@
 
 describe('Checking functionality of modal window', () => {
+    beforeEach(() => {
 
-  beforeEach(() => {
-
-    document.body.innerHTML = `
+        document.body.innerHTML = `
         <button class="button navbar__button" id="callme"> Заказать звонок</button>
         <div class="modal" id="modal">
             <div class="modal-dialog">
@@ -20,9 +19,8 @@ describe('Checking functionality of modal window', () => {
     });
 
     test('Check if modal window can be opened', () => {
-        
         const openModal = document.querySelector('#callme');
-        require('./modal');
+        require('../js/modal');
 
         openModal.click();
         expect(modal.classList).toContain('modal_active');
@@ -30,12 +28,32 @@ describe('Checking functionality of modal window', () => {
     });
 
     test('Check if modal window can be closed', () => {
-    
         const closeModal = document.querySelector('#close');
-        require('./modal');
+        require('../js/modal');
 
         closeModal.click();
         expect(modal.classList).not.toContain('modal_active');
 
     });
+
+    // test('Check if form validation works in modal window', () => {
+    //     jest.dontMock('../css/style.css');
+
+    //     const openModal = document.querySelector('#callme');
+
+    //     openModal.click();
+    //     // jest.dontMock('jquery');
+
+    //     // require('../js/modal');
+    //     const inputValue = document.getElementsByName('modal__user');
+    //     inputValue.value = 1;
+    //     //jest.dontMock('../css/style.css')
+
+    //     require('../js/index');
+
+    //     const labelError = document.getElementsByClassName('invalid');
+    //     expect(labelError.innerText).toBe('Минимальное кол-во знаков: 2 ')
+    //     // expect(inputValue.value).toBe(1)
+    // });
+
 });

@@ -12,6 +12,7 @@ Desktop and Responsive Landing page with Modal box.
 - [Webpack](https://webpack.js.org/)
 - [Sass](https://sass-lang.com/)
 - [ESLint](https://eslint.org/)
+- [Jest](https://jestjs.io/en/)
 
 ## Run locally
 ```bash
