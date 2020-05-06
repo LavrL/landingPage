@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "dev": "webpack --mode development",
+    "test_stat": "jest --collectCoverage",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open"
